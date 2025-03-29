@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="images/Map.png">
+    <title>Корзина - Магазин настольных игр "Настольная фантазия"</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header id="header">
+                <script src="header.js"></script>
+            </header>
+            <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <table align=center cellspacing=0 class=menu>
+                    <tr>
+                        <td><a href=index.html>Главная</a></td>
+                        <td><a href=catalog.html>Каталог игр</a></td>
+                        <td><a href=discounts.html>Скидки и акции</a></td>
+                        <td><a href=rental.html>Прокат игр</a></td>
+                        <td><a href=contacts.html>Контактная информация</a></td>
+                    </tr>
+                </table>
+                <script src="nav.js"></script>
+            </nav>
+            <h2>Ваша корзина</h2>
+            <div class="cart-items" id="cart-items">
+            </div>
+            <p>Общая сумма: <b><span id="total-sum">0</span> рублей</b></p>
+            <button type="button" class="btn btn-primary button-pay">Оплатить</button>
+        </div>
+        <footer class="navbar-static-bottom" id="footer">
+            <script src="footer.js"></script>
+        </footer>
+    </div>
+    
+    <script src="cart.js"></script>
+</body>
+
+</html>

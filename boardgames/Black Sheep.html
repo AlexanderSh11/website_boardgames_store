@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="../images/Map.png">
+    <title>Чёрная овечка - Магазин настольных игр "Настольная фантазия"</title>
+</head>
+<body>
+    <header id="header">
+        <script src="../header.js"></script>
+    </header>
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <script src="../nav2.js"></script>
+    </nav>
+    <div class="game-full-info">
+        <div class="game-name">
+            <h2>Чёрная овечка</h2>
+        </div>
+        <div class="game">
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="../images/Black Sheep.jpg" alt="Black Sheep" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Black Sheep1.jpg" alt="Black Sheep" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Black Sheep2.jpg" alt="Black Sheep" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Black Sheep3.jpg" alt="Black Sheep" onclick="openLightbox(this.src)"></div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button onclick="showSlide(0)">1</button>
+                    <button onclick="showSlide(1)">2</button>
+                    <button onclick="showSlide(2)">3</button>
+                    <button onclick="showSlide(3)">4</button>
+                </div>
+                <script src="slider.js"></script>
+            </div>
+            <div class="describtion">
+                <p>"Черная овечка" — это детская настольная игра, в которой игроки пытаются собрать коллекцию животных, живущих на ферме, таких как коровы, овцы, свиньи и куры. На каждом ходу игроки тянут карты из общей колоды и пытаются составить пары животных, но есть особые карты, такие как черная овечка, которая может усложнить игру. Игроки могут обмениваться картами, чтобы быстрее собрать нужные пары. Побеждает тот, кто первым соберет полную коллекцию животных, проявляя при этом стратегию и удачу.</p>
+                <div>
+                    <p><b>Комплектация: </b></p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">64 карточки обычных животных</li>
+                        <li class="list-inline-item">14 карточек особых животных</li>
+                        <li class="list-inline-item">1 карточка водопоя</li>
+                        <li class="list-inline-item">Правила игры</li>
+                    </ul>
+                </div>            
+                <div class="game-rules">
+                    <a href="Black Sheep-rules.pdf" target="_blank"><img src="../images/Rules.jpg" alt="Rules"></a>
+                    <p>Правила игры</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <img src="../images/Age 7+.png">
+                <img src="../images/Time 20+.png">
+                <img src="../images/Players 2-5.png">
+            </div>
+            <div class="availability">
+                <p>В наличии &#9989</p>
+            </div>
+            <div class="without-discount">
+                <h3>690₽</h3>
+            </div>
+            <button onclick="addToCart('Чёрная овечка', 'images/Black Sheep.jpg', 690, 0, 'Black Sheep')" type="button" class="btn btn-primary">Добавить в корзину</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <script src="../footer.js"></script>
+    </footer>
+    <script src="../addCart.js"></script>
+</body>
+</html>

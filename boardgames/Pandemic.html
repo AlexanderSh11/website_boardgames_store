@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="../images/Map.png">
+    <title>Пандемия - Магазин настольных игр "Настольная фантазия"</title>
+</head>
+<body>
+    <header id="header">
+        <script src="../header.js"></script>
+    </header>
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <script src="../nav2.js"></script>
+    </nav>
+    <div class="game-full-info">
+        <div class="game-name">
+            <h2>Пандемия</h2>
+        </div>
+        <div class="game">
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="../images/Pandemic.jpg" alt="Pandemic" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Pandemic1.jpg" alt="Pandemic" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Pandemic2.webp" alt="Pandemic" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Pandemic3.jpg" alt="Pandemic" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Pandemic4.webp" alt="Pandemic" onclick="openLightbox(this.src)"></div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button onclick="showSlide(0)">1</button>
+                    <button onclick="showSlide(1)">2</button>
+                    <button onclick="showSlide(2)">3</button>
+                    <button onclick="showSlide(3)">4</button>
+                    <button onclick="showSlide(4)">5</button>
+                </div>
+                <script src="slider.js"></script>
+            </div>
+            <div class="describtion">
+                <p>Кооперативная игра, в которой группа учёных и врачей объединяется, чтобы предотвратить глобальные эпидемии. Игроки совместно работают, чтобы исследовать лекарства и остановить распространение болезней. Требуется хорошая координация и стратегическое планирование, чтобы успеть вовремя. Эта игра предлагает напряжённую атмосферу и настоящий вызов для команды.</p>
+                <div>
+                    <p><b>Комплектация: </b></p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Игровое поле</li>
+                        <li class="list-inline-item">7 карт ролей</li>
+                        <li class="list-inline-item">7 фигурок игроков</li>
+                        <li class="list-inline-item">6 фишек исследовательских станций</li>
+                        <li class="list-inline-item">96 кубиков заболеваний</li>
+                        <li class="list-inline-item">6 маркеров (уровня инфицирования, вспышек болезней и 4 вакцин)</li>
+                        <li class="list-inline-item">48 карт городов</li>
+                        <li class="list-inline-item">48 карт болезней</li>
+                        <li class="list-inline-item">6 карт эпидемий</li>
+                        <li class="list-inline-item">5 карт специальных событий</li>
+                        <li class="list-inline-item">4 карты-памятки</li>
+                        <li class="list-inline-item">Правила игры</li>
+                    </ul>
+                </div>            
+                <div class="game-rules">
+                    <a href="Pandemic-rules.pdf" target="_blank"><img src="../images/Rules.jpg" alt="Rules"></a>
+                    <p>Правила игры</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <img src="../images/Age 10+.png">
+                <img src="../images/Time 30+.png">
+                <img src="../images/Players 2-4.png">
+            </div>
+            <div class="availability-not">
+                <p>Нет в наличии &#10006</p>
+            </div>
+            <div class="without-discount">
+                <h3>3190₽</h3>
+            </div>
+            <button onclick="location.href='../contacts.html';" type="button" class="btn btn-primary" data-id="Pandemic">Узнать о поступлении</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <script src="../footer.js"></script>
+    </footer>
+    <script src="../addCart.js"></script>
+</body>
+</html>

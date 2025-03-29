@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="../images/Map.png">
+    <title>Бэнг! - Магазин настольных игр "Настольная фантазия"</title>
+</head>
+<body>
+    <header id="header">
+        <script src="../header.js"></script>
+    </header>
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <script src="../nav2.js"></script>
+    </nav>
+    <div class="game-full-info">
+        <div class="game-name">
+            <h2>Бэнг!</h2>
+        </div>
+        <div class="game">
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="../images/Bang.jpg" alt="Bang" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Bang1.jpg" alt="Bang" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Bang2.jpg" alt="Bang" onclick="openLightbox(this.src)"></div>
+                        <div class="slide"><img src="../images/Bang3.jpg" alt="Bang" onclick="openLightbox(this.src)"></div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button onclick="showSlide(0)">1</button>
+                    <button onclick="showSlide(1)">2</button>
+                    <button onclick="showSlide(2)">3</button>
+                    <button onclick="showSlide(3)">4</button>
+                </div>
+                <script src="slider.js"></script>
+            </div>
+            <div class="describtion">
+                <p>Это карточная игра в жанре "дикого запада", где игроки берут на себя роли шерифа, его помощников, бандитов и ренегата. Цель игры зависит от роли: шерифу нужно поймать бандитов, а бандитам – устранить шерифа. Игру отличают скрытые роли, интриги и взаимодействия между игроками. Легкая и динамичная, она привлекает элементами блефа и социальной динамики.</p>
+                <div>
+                    <p><b>Комплектация: </b></p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">7 карт ролей</li>
+                        <li class="list-inline-item">16 карт персонажей</li>
+                        <li class="list-inline-item">80 игровых карт</li>
+                        <li class="list-inline-item">7 памяток</li>
+                        <li class="list-inline-item">7 планшетов</li>
+                        <li class="list-inline-item">30 жетонов патронов</li>
+                        <li class="list-inline-item">Правила игры</li>
+                    </ul>
+                </div>            
+                <div class="game-rules">
+                    <a href="Bang-rules.pdf" target="_blank"><img src="../images/Rules.jpg" alt="Rules"></a>
+                    <p>Правила игры</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <img src="../images/Age 12+.png">
+                <img src="../images/Time 20-40.png">
+                <img src="../images/Players 4-7.png">
+            </div>
+            <div class="availability">
+                <p>В наличии &#9989</p>
+            </div>
+            <div class="without-discount">
+                <h3>990₽</h3>
+            </div>
+            <button onclick="addToCart('Бэнг!', 'images/Bang.jpg', 990, 0, 'Bang')" type="button" class="btn btn-primary">Добавить в корзину</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <script src="../footer.js"></script>
+    </footer>
+    <script src="../addCart.js"></script>
+</body>
+</html>
